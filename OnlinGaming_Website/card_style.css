@@ -29,7 +29,7 @@
     padding: 10px 20px; /* Button padding */
     border: none; /* No border */
     border-radius: 5px; /* Rounded button corners */
-    background-color: #007bff; /* Button background color */
+    background-color: #9b02e1; /* Button background color */
     color: white; /* Button text color */
     text-decoration: none; /* No underline */
     transition: background-color 0.3s; /* Smooth background color transition */
@@ -39,7 +39,9 @@
     background-color: #0056b3; /* Darker button color on hover */
 }
 .header {
-    padding-bottom: 20px; /* Add padding to the bottom of the header */
+    padding-bottom: 20px;
+    position: sticky; 
+    margin-top: 2vh;/* Add padding to the bottom of the header */
 }
 
 .separator-block {
@@ -48,7 +50,8 @@
     text-align: center; /* Center align the text */
     backdrop-filter: blur(5px); /* Blur effect */
     color: white; /* Text color */
-    margin: 40px 0; /* Increase margin to separate from header and container */
+    margin-top: 40px; /* Add space specifically below the header */
+    margin-bottom: 40px; /* Add space below the separator block */
     border-radius: 10px; /* Rounded corners */
 }
 
@@ -64,3 +67,5 @@
 .btns .btn {
     margin: 0 10px; /* Space between buttons */
 }
+
+

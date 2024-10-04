@@ -79,7 +79,7 @@ body:hover::before {
 }
 
 .navbar a:hover {
-    color: Cyan;
+    color: #9b02e1;
 }
 
 #menu-icon {
@@ -152,7 +152,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: Cyan; /* Hover color */
+    color: #9b02e1; /* Hover color */
 }
 
 footer .icons i {
@@ -163,7 +163,7 @@ footer .icons i {
 }
 
 footer .icons i:hover {
-    color: Cyan; /* Hover color for icons */
+    color: #9b02e1; /* Hover color for icons */
 }
 
 footer .phone,
@@ -229,5 +229,26 @@ footer .address {
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    color: cyan;
+    color: #9b02e1;
+}
+main {
+    flex: 1;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.game-container {
+    width: 600px;  /* Fixed width */
+    height: 600px; /* Fixed height */
+    border: 2px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9; /* Optional background color */
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
