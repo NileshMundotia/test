@@ -1,94 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
-    Write your CSS here 
-    Line Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
-    */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      height: 748px;
-      width: 748px;
-      display: grid;
-      background-color: #000;
-      grid-template-columns: 320px 198px 153px 50px;
-      grid-template-rows: 414px 130px 155px 22px;
-      gap: 9px;
-    }
-
-    .item {
-      background-color: #F0F1EC;
-    }
-
-    .red {
-      background-color: #E72F24;
-    }
-
-    .white1 {
-      grid-column: span 3;
-    }
-
-    .white2 {
-      grid-row: span 2;
-    }
-
-    .white3 {
-      grid-area: 2 / 2 / 4 /4
-    }
-
-    .blue {
-      background-color: #004592;
-      border-bottom: 10px solid #000;
-    }
-
-    .white4 {
-      grid-row: span 2;
-    }
-
-    .yellow {
-      background-color: #F9D01E;
-    }
-
-    .black {
-      background-color: #232629;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Write your HTML here -->
-
-  <div class="container">
-    <div class="item red"></div>
-    <div class="item white1"></div>
-    <div class="item white2"></div>
-    <div class="item white3"></div>
-
-    <div class="item blue"></div>
-    <div class="item white4"></div>
-
-    <div class="item"></div>
-    <div class="item yellow"></div>
-    <div class="item black"></div>
-  </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <div class="scores">
+        <h1 id="score">000</h1>
+        <h1 id="highScore">000</h1>
+      </div>
+      <div class="game-border-1">
+        <div class="game-border-2">
+          <div class="game-border-3">
+            <div id="game-board"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 id="instruction-text">Press spacebar to start the game</h1>
+    <img id="logo" src="snake-game-ai-gen.png" alt="snake-logo" />
+  </body>
 </html>
